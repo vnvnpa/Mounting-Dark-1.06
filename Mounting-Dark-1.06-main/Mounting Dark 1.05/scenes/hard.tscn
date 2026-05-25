@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://drqxmg6edfmu7"]
+
+[ext_resource type="PackedScene" uid="uid://dofmss7ob4vjk" path="res://scenes/infern-background.tscn" id="1_eontd"]
+[ext_resource type="Script" uid="uid://b78ueea43wj3n" path="res://scripts/hard.gd" id="1_fo8dt"]
+[ext_resource type="PackedScene" uid="uid://b8n0i3ghaopon" path="res://scenes/main.tscn" id="2_2cycb"]
+[ext_resource type="PackedScene" uid="uid://bfa30titbdmry" path="res://scenes/option.pause.tscn" id="3_2cycb"]
+[ext_resource type="AudioStream" uid="uid://pti8a27i21ey" path="res://assets/sons/fireforce.ogg" id="5_0ef5u"]
+
+[node name="hard" type="Node2D" unique_id=837261878]
+script = ExtResource("1_fo8dt")
+
+[node name="background" parent="." unique_id=399421608 instance=ExtResource("1_eontd")]
+
+[node name="Main" parent="." unique_id=2047773791 instance=ExtResource("2_2cycb")]
+
+[node name="opition" parent="." unique_id=1235007892 instance=ExtResource("3_2cycb")]
+
+[node name="Fireforce" type="AudioStreamPlayer" parent="." unique_id=40042610]
+stream = ExtResource("5_0ef5u")
